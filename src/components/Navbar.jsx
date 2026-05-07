@@ -28,7 +28,11 @@ function Navbar() {
       transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
     >
       <a href="/" className="navbar-logo">
-        <img src={logo} alt="LS Creative Studio" className="navbar-logo-img" />
+        <img
+          src="/lslogo.png"
+          alt="LS Creative Studio"
+          className="footer-logo"
+        />
       </a>
 
       {/* Desktop links */}

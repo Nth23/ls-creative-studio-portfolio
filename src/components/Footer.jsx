@@ -7,7 +7,11 @@ function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-left">
-          <img src={logo} alt="LS Creative Studio" className="footer-logo" />
+          <img
+            src="/lslogo.png"
+            alt="LS Creative Studio"
+            className="footer-logo"
+          />
           <p className="footer-tagline">Architecture & Structural Design</p>
         </div>
 
