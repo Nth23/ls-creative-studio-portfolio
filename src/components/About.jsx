@@ -8,7 +8,7 @@ function About() {
       <FadeUp>
         <div className="about-image-wrap">
           <img
-            src="../assets/images/Headshot3.jpg"
+            src="../assets/images/headshot1.jpg"
             alt="Architect portrait"
             className="about-image"
           />
