@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import projects from "../data/projects";
 import "./ProjectDetail.css";
@@ -9,6 +9,11 @@ function ProjectDetail() {
   const project = projects.find((p) => p.id === parseInt(id));
   const [activeImage, setActiveImage] = useState(0);
   const [heroIndex, setHeroIndex] = useState(0);
+  const galleryMainRef = useRef(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const heroImages = project?.gallery
     ? project.gallery.slice(0, 5)
@@ -20,6 +25,14 @@ function ProjectDetail() {
     }, 4000);
     return () => clearInterval(timer);
   }, [heroImages.length]);
+
+  const handleThumbClick = (index) => {
+    setActiveImage(index);
+    galleryMainRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
   if (!project) {
     return (
@@ -105,7 +118,7 @@ function ProjectDetail() {
         {project.gallery && (
           <div className="pd-gallery">
             <span className="pd-label">Gallery</span>
-            <div className="pd-gallery-main">
+            <div className="pd-gallery-main" ref={galleryMainRef}>
               <AnimatePresence mode="wait">
                 <motion.img
                   key={activeImage}
@@ -116,42 +129,37 @@ function ProjectDetail() {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -30 }}
                   transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+                  drag="x"
+                  dragConstraints={{ left: 0, right: 0 }}
+                  dragElastic={0.2}
+                  onDragEnd={(e, { offset }) => {
+                    if (offset.x < -50) {
+                      setActiveImage(
+                        activeImage === project.gallery.length - 1
+                          ? 0
+                          : activeImage + 1,
+                      );
+                    } else if (offset.x > 50) {
+                      setActiveImage(
+                        activeImage === 0
+                          ? project.gallery.length - 1
+                          : activeImage - 1,
+                      );
+                    }
+                  }}
                 />
               </AnimatePresence>
-              <button
-                className="pd-gallery-prev"
-                onClick={() =>
-                  setActiveImage(
-                    activeImage === 0
-                      ? project.gallery.length - 1
-                      : activeImage - 1,
-                  )
-                }
-              >
-                ←
-              </button>
-              <button
-                className="pd-gallery-next"
-                onClick={() =>
-                  setActiveImage(
-                    activeImage === project.gallery.length - 1
-                      ? 0
-                      : activeImage + 1,
-                  )
-                }
-              >
-                →
-              </button>
               <div className="pd-gallery-counter">
                 {activeImage + 1} / {project.gallery.length}
               </div>
             </div>
-            <div className="pd-gallery-thumbs">
+
+            <div className="pd-gallery-reel">
               {project.gallery.map((img, index) => (
                 <div
                   key={index}
-                  className={`pd-thumb ${index === activeImage ? "pd-thumb--active" : ""}`}
-                  onClick={() => setActiveImage(index)}
+                  className={`pd-reel-item ${index === activeImage ? "pd-reel-item--active" : ""}`}
+                  onClick={() => handleThumbClick(index)}
                 >
                   <img src={img} alt={`thumb ${index + 1}`} />
                 </div>
