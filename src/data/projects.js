@@ -5,7 +5,7 @@ import living4 from "../assets/images/projects/2bedroom/2bed-living4.webp";
 import living5 from "../assets/images/projects/2bedroom/2bed-living5.jpg";
 import living6 from "../assets/images/projects/2bedroom/2bed-living6.jpg";
 import room1 from "../assets/images/projects/2bedroom/2bed-room1.webp";
-import room2 from "../assets/images/projects/2bedroom/2bed-room2.jpg";
+import room2 from "../assets/images/projects/2bedroom/2bed-room7.jpg";
 import room3 from "../assets/images/projects/2bedroom/2bed-room3.webp";
 import room5 from "../assets/images/projects/2bedroom/2bed-room5.jpg";
 import room6 from "../assets/images/projects/2bedroom/2bed-room6.jpg";

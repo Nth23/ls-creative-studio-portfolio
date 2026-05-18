@@ -40,6 +40,9 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .pd-hero-overlay {
@@ -50,6 +53,7 @@
     rgba(15, 15, 15, 0.9) 0%,
     rgba(15, 15, 15, 0.2) 60%
   );
+  z-index: 1;
 }
 
 .pd-hero-content {
@@ -59,6 +63,7 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  z-index: 2;
 }
 
 .pd-title {
@@ -155,6 +160,7 @@
 }
 
 .pd-gallery-main {
+  position: relative;
   width: 100%;
   height: 80vh;
   overflow: hidden;
@@ -169,7 +175,6 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  transition: opacity 0.3s ease;
   background: #0a0a0a;
 }
 
@@ -200,6 +205,51 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.pd-gallery-prev,
+.pd-gallery-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(15, 15, 15, 0.7);
+  border: 1px solid rgba(245, 245, 240, 0.2);
+  color: #f5f5f0;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.pd-gallery-prev {
+  left: 1.5rem;
+}
+
+.pd-gallery-next {
+  right: 1.5rem;
+}
+
+.pd-gallery-prev:hover,
+.pd-gallery-next:hover {
+  background: #f5f5f0;
+  color: #0f0f0f;
+}
+
+.pd-gallery-counter {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  opacity: 0.6;
+  background: rgba(15, 15, 15, 0.7);
+  padding: 0.4rem 0.8rem;
+  z-index: 2;
 }
 
 .pd-floorplan {
@@ -256,7 +306,14 @@
   }
 
   .pd-gallery-main {
-    height: 50vw;
+    height: auto;
+    aspect-ratio: 4/5;
+  }
+
+  .pd-gallery-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .pd-gallery-thumbs {
@@ -266,52 +323,4 @@
   .pd-back {
     padding: 2rem 1.5rem;
   }
-}
-
-.pd-gallery-main {
-  position: relative;
-}
-
-.pd-gallery-prev,
-.pd-gallery-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(15, 15, 15, 0.7);
-  border: 1px solid rgba(245, 245, 240, 0.2);
-  color: #f5f5f0;
-  width: 48px;
-  height: 48px;
-  cursor: pointer;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s;
-  z-index: 2;
-}
-
-.pd-gallery-prev {
-  left: 1.5rem;
-}
-
-.pd-gallery-next {
-  right: 1.5rem;
-}
-
-.pd-gallery-prev:hover,
-.pd-gallery-next:hover {
-  background: #f5f5f0;
-  color: #0f0f0f;
-}
-
-.pd-gallery-counter {
-  position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  opacity: 0.6;
-  background: rgba(15, 15, 15, 0.7);
-  padding: 0.4rem 0.8rem;
 }

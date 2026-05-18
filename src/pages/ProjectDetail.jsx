@@ -1,5 +1,5 @@
 import { useParams, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import projects from "../data/projects";
 import "./ProjectDetail.css";
@@ -8,6 +8,18 @@ function ProjectDetail() {
   const { id } = useParams();
   const project = projects.find((p) => p.id === parseInt(id));
   const [activeImage, setActiveImage] = useState(0);
+  const [heroIndex, setHeroIndex] = useState(0);
+
+  const heroImages = project?.gallery
+    ? project.gallery.slice(0, 5)
+    : [project?.image];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setHeroIndex((prev) => (prev === heroImages.length - 1 ? 0 : prev + 1));
+    }, 4000);
+    return () => clearInterval(timer);
+  }, [heroImages.length]);
 
   if (!project) {
     return (
@@ -28,11 +40,18 @@ function ProjectDetail() {
       <div className="pd">
         {/* Hero */}
         <div className="pd-hero">
-          <img
-            src={project.gallery ? project.gallery[activeImage] : project.image}
-            alt={project.title}
-            className="pd-hero-image"
-          />
+          <AnimatePresence mode="wait">
+            <motion.img
+              key={heroIndex}
+              src={heroImages[heroIndex]}
+              alt={project.title}
+              className="pd-hero-image"
+              initial={{ opacity: 0, scale: 1.05 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 1.2, ease: [0.25, 0.1, 0.25, 1] }}
+            />
+          </AnimatePresence>
           <div className="pd-hero-overlay" />
           <div className="pd-hero-content">
             <span className="pd-label">{project.category}</span>
