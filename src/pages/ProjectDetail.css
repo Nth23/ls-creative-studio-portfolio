@@ -323,4 +323,24 @@
   .pd-back {
     padding: 2rem 1.5rem;
   }
+
+  .pd-gallery-prev {
+    top: auto;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    transform: none;
+  }
+
+  .pd-gallery-next {
+    top: auto;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    transform: none;
+  }
+
+  .pd-gallery-counter {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
