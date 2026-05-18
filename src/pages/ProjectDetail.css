@@ -326,14 +326,14 @@
 
   .pd-gallery-prev {
     top: auto;
-    bottom: 1.5rem;
+    bottom: 1rem;
     left: 1.5rem;
     transform: none;
   }
 
   .pd-gallery-next {
     top: auto;
-    bottom: 1.5rem;
+    bottom: 1rem;
     right: 1.5rem;
     transform: none;
   }
