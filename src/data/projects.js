@@ -1,3 +1,19 @@
+import living1 from "../assets/images/projects/2bedroom/2bed-living1.webp";
+import living2 from "../assets/images/projects/2bedroom/2bed-living2.webp";
+import living3 from "../assets/images/projects/2bedroom/2bed-living3.webp";
+import living4 from "../assets/images/projects/2bedroom/2bed-living4.webp";
+import living5 from "../assets/images/projects/2bedroom/2bed-living5.jpg";
+import living6 from "../assets/images/projects/2bedroom/2bed-living6.jpg";
+import room1 from "../assets/images/projects/2bedroom/2bed-room1.webp";
+import room2 from "../assets/images/projects/2bedroom/2bed-room2.jpg";
+import room3 from "../assets/images/projects/2bedroom/2bed-room3.webp";
+import room5 from "../assets/images/projects/2bedroom/2bed-room5.jpg";
+import room6 from "../assets/images/projects/2bedroom/2bed-room6.jpg";
+import kitchen1 from "../assets/images/projects/2bedroom/2bed-kitchen1.jpg";
+import bathroom from "../assets/images/projects/2bedroom/2bed-bathroom.webp";
+import lobby from "../assets/images/projects/2bedroom/2bed-lobby.jpg";
+import dining1 from "../assets/images/projects/2bedroom/2bed-dinning1.jpg";
+
 const projects = [
   {
     id: 1,
@@ -7,7 +23,7 @@ const projects = [
     category: "Interior Design",
     description:
       "Interior design for a bachelor who works in a tech company and spends more time working at home. Spaces include sitting room, bedroom, home office, laundry and kitchen.",
-    image: "/src/assets/images/projects/2bedroom/2bed-living1.webp",
+    image: living1,
     floorPlan: null,
     features: [
       "Dining Space",
@@ -19,21 +35,21 @@ const projects = [
       "Kitchen Area",
     ],
     gallery: [
-      "/src/assets/images/projects/2bedroom/2bed-living1.webp",
-      "/src/assets/images/projects/2bedroom/2bed-living2.webp",
-      "/src/assets/images/projects/2bedroom/2bed-living3.webp",
-      "/src/assets/images/projects/2bedroom/2bed-living4.webp",
-      "/src/assets/images/projects/2bedroom/2bed-living5.jpg",
-      "/src/assets/images/projects/2bedroom/2bed-living6.jpg",
-      "/src/assets/images/projects/2bedroom/2bed-room1.webp",
-      "/src/assets/images/projects/2bedroom/2bed-room7.jpg",
-      "/src/assets/images/projects/2bedroom/2bed-room3.webp",
-      "/src/assets/images/projects/2bedroom/2bed-room5.jpg",
-      "/src/assets/images/projects/2bedroom/2bed-room6.jpg",
-      "/src/assets/images/projects/2bedroom/2bed-kitchen1.jpg",
-      "/src/assets/images/projects/2bedroom/2bed-bathroom.webp",
-      "/src/assets/images/projects/2bedroom/2bed-lobby.jpg",
-      "/src/assets/images/projects/2bedroom/2bed-dinning1.jpg",
+      living1,
+      living2,
+      living3,
+      living4,
+      living5,
+      living6,
+      room1,
+      room2,
+      room3,
+      room5,
+      room6,
+      kitchen1,
+      bathroom,
+      lobby,
+      dining1,
     ],
   },
   {
