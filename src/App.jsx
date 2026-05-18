@@ -3,11 +3,12 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import AboutPage from "./pages/AboutPage";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
+import AboutPage from "./pages/AboutPage";
+import ProjectDetail from "./pages/ProjectDetail";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
             }
           />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
         </Routes>
       </AnimatePresence>
     </div>

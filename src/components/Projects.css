@@ -109,6 +109,7 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 1rem;
+  text-decoration: none;
 }
 
 .project-btn:hover {

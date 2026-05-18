@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./Projects.css";
 import projects from "../data/projects";
+import { Link } from "react-router-dom";
 
 const categories = ["All", "Residential", "Hospitality", "Interior Design"];
 
@@ -50,7 +51,9 @@ function Projects() {
                 <span>{project.year}</span>
                 <span>{project.category}</span>
               </div>
-              <button className="project-btn">View Project</button>
+              <Link to={`/projects/${project.id}`} className="project-btn">
+                View Project
+              </Link>
             </div>
           </div>
         ))}
