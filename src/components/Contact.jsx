@@ -28,16 +28,16 @@ function Contact() {
             <div className="contact-detail-item">
               <span className="contact-detail-label">Email</span>
               <a
-                href="mailto:hello@lscreativestudio.com"
+                href="mailto:ls.creativesstudios@gmail.com"
                 className="contact-detail-value"
               >
-                hello@lscreativestudio.com
+                ls.creativesstudios@gmail.com
               </a>
             </div>
             <div className="contact-detail-item">
               <span className="contact-detail-label">Phone</span>
-              <a href="tel:+2340000000000" className="contact-detail-value">
-                +234 000 000 0000
+              <a href="tel:+2347068153217" className="contact-detail-value">
+                +234 706 815 3217
               </a>
             </div>
             <div className="contact-detail-item">

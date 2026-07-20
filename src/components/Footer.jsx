@@ -23,7 +23,7 @@ function Footer() {
 
         <div className="footer-socials">
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/ls.studios.ng"
             target="_blank"
             rel="noreferrer"
             className="footer-social-link"
@@ -39,7 +39,7 @@ function Footer() {
             <Linkedin size={18} strokeWidth={1.5} />
           </a>
           <a
-            href="mailto:hello@lscreativestudio.com"
+            href="mailto:ls.creativesstudios@gmail.com"
             className="footer-social-link"
           >
             <Mail size={18} strokeWidth={1.5} />
