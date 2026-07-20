@@ -19,13 +19,13 @@ function About() {
       <FadeUp delay={0.2}>
         <div className="about-content">
           <span className="about-label">About</span>
-          <h2 className="about-title">Designing spaces that tell a story</h2>
+          <h2 className="about-title">Every space tells a story</h2>
           <p className="about-text">
-            With over a decade of experience in structural and architectural
-            design, our studio creates spaces that balance beauty, function and
-            cultural identity. Every project begins with listening —
-            understanding the people, the place, and the purpose behind the
-            build.
+            At LS Studios, we design buildings, interiors, and objects that
+            reflect culture, enrich human experience, and respond thoughtfully
+            to their environment. Every project is guided by purpose, shaped by
+            innovation, and crafted to create lasting connections between people
+            and the spaces they inhabit.
           </p>
           <Link to="/about" className="about-link">
             Full Story
