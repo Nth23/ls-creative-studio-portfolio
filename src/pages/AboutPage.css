@@ -299,6 +299,49 @@
   }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+  .ap-hero {
+    min-height: 85vh;
+  }
+
+  .ap-hero-content {
+    padding: 4.5rem 3rem;
+  }
+
+  .ap-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ap-stat {
+    padding: 3rem 2rem;
+  }
+
+  .ap-story {
+    gap: 4rem;
+    padding: 6rem 2rem;
+  }
+
+  .ap-philosophy {
+    padding: 6rem 2rem;
+  }
+
+  .ap-skills {
+    padding: 6rem 2rem;
+  }
+
+  .ap-credentials {
+    padding: 5rem 2rem;
+  }
+
+  .ap-credentials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ap-cta {
+    padding: 6rem 2rem;
+  }
+}
+
 .ap-credentials {
   padding: 6rem 3rem;
   border-bottom: 1px solid rgba(245, 245, 240, 0.1);

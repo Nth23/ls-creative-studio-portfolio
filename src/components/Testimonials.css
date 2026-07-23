@@ -131,3 +131,21 @@
     font-size: 1.1rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .testimonials {
+    padding: 6rem 2rem;
+  }
+
+  .testimonials-carousel {
+    max-width: 720px;
+  }
+
+  .testimonial-slide {
+    gap: 2rem;
+  }
+
+  .testimonials-controls {
+    gap: 1.5rem;
+  }
+}

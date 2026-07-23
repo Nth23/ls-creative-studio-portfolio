@@ -7,36 +7,29 @@ const testimonials = [
     id: 1,
     quote:
       "Shaakirah has an incredible eye for detail. She took our brief and delivered something far beyond what we imagined. The floor plans were precise, the 3D renders were stunning and the final build was exactly as designed.",
-    name: "Emeka Okonkwo",
-    title: "Residential Client, Ikoyi Lagos",
+    name: "Luqman Adedotun Adebiyi",
+    title: "Residential Client",
   },
   {
     id: 2,
     quote:
-      "Working with LS Creative Studio on our restaurant was a seamless experience. Shaakirah understood the atmosphere we wanted to create and translated it perfectly into the space. Our customers constantly compliment the design.",
-    name: "Amina Bello",
-    title: "Hospitality Client, Victoria Island",
+      "Working with LS Studios on our restaurant was a seamless experience. Shaakirah understood the atmosphere we wanted to create and translated it perfectly into the space. Our customers constantly compliment the design.",
+    name: "Mr. Chijioke",
+    title: "Hospitality Client",
   },
   {
     id: 3,
     quote:
       "The level of professionalism and creativity Shaakirah brings is unmatched. From the initial concept drawings to the final interior finishes, every stage was handled with care and precision. Highly recommend.",
-    name: "Tunde Adeyemi",
-    title: "Commercial Client, Abuja",
+    name: "Mr. Ndukuaba",
+    title: "Commercial Client",
   },
   {
     id: 4,
     quote:
       "We came to Shaakirah with a very complex site and a tight brief. She navigated every constraint with ease and delivered a design that was both functional and beautifully considered. The attention to structural detail was exceptional.",
-    name: "Fatima Al-Hassan",
-    title: "Residential Client, Abuja",
-  },
-  {
-    id: 5,
-    quote:
-      "LS Creative Studio transformed our lounge into something truly world class. Shaakirah has a rare ability to blend technical precision with genuine creative vision. The result exceeded every expectation we had.",
-    name: "Biodun Fashola",
-    title: "Hospitality Client, Lagos Island",
+    name: "Mr. Nonso",
+    title: "Residential Client",
   },
 ];
 

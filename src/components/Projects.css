@@ -176,3 +176,25 @@
     font-size: 0.7rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .projects {
+    padding: 6rem 2rem;
+  }
+
+  .projects-list {
+    gap: 4rem;
+  }
+
+  .project-item {
+    gap: 2rem;
+  }
+
+  .project-btn {
+    padding: 0.75rem 1.5rem;
+  }
+
+  .projects-filter {
+    gap: 0.8rem;
+  }
+}

@@ -95,3 +95,17 @@
     font-size: 0.75rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    min-height: 85vh;
+  }
+
+  .hero-title {
+    font-size: clamp(2.75rem, 5vw, 4.5rem);
+  }
+
+  .hero-tagline {
+    font-size: 0.9rem;
+  }
+}

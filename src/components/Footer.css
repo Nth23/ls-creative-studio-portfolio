@@ -84,3 +84,18 @@
     flex-wrap: wrap;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer {
+    padding: 3.5rem 2rem 2rem;
+  }
+
+  .footer-inner {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .footer-links {
+    gap: 1.8rem;
+  }
+}

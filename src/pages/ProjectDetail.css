@@ -331,3 +331,42 @@
     padding: 2rem 1.5rem;
   }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .pd-hero {
+    height: 70vh;
+  }
+
+  .pd-hero-content {
+    bottom: 3rem;
+    left: 3rem;
+  }
+
+  .pd-info {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 4rem;
+    padding: 5rem 2.5rem;
+  }
+
+  .pd-info-right {
+    padding-left: 3rem;
+    border-left: 1px solid rgba(245, 245, 240, 0.1);
+  }
+
+  .pd-gallery {
+    padding: 5rem 2.5rem;
+  }
+
+  .pd-gallery-main {
+    height: 60vh;
+  }
+
+  .pd-reel-item {
+    width: 100px;
+    height: 70px;
+  }
+
+  .pd-back {
+    padding: 2.5rem 2.5rem;
+  }
+}
