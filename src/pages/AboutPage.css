@@ -298,3 +298,46 @@
     padding: 2rem 1.5rem;
   }
 }
+
+.ap-credentials {
+  padding: 6rem 3rem;
+  border-bottom: 1px solid rgba(245, 245, 240, 0.1);
+}
+
+.ap-credentials-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.ap-credential-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 2rem;
+  border: 1px solid rgba(245, 245, 240, 0.1);
+}
+
+.ap-credential-title {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+
+.ap-credential-desc {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  letter-spacing: 0.03em;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .ap-credentials {
+    padding: 4rem 1.5rem;
+  }
+
+  .ap-credentials-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

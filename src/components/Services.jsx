@@ -5,27 +5,33 @@ import FadeUp from "./FadeUp";
 const services = [
   {
     icon: PenTool,
-    title: "Architectural Design",
+    title: "Architecture Design",
     description:
-      "Full concept to completion architectural design for residential and commercial builds.",
+      "Architectural design for buildings, floor plans, site layouts and distinctive facades, carefully tailored to your brief with functionality, materials, climate and aesthetics in mind.",
   },
   {
     icon: Layers,
-    title: "Structural & Floor Plans",
+    title: "Interior Design",
     description:
-      "Detailed blueprints, floor plans, sections and technical drawings to professional standard.",
+      "A holistic approach to interior spaces, considering circulation, layout, furniture, lighting, ceiling design and material finishes to create spaces that feel as good as they look.",
   },
   {
     icon: Sofa,
-    title: "Interior Design",
+    title: "Interior Fit-outs",
     description:
-      "Bespoke interior concepts covering space planning, materials, lighting and finishes.",
+      "Bespoke furniture and interior fit-outs for kitchens, offices, retail spaces and living areas, designed for your space and fully installed for immediate use.",
   },
   {
     icon: Hammer,
-    title: "Renovation & Restoration",
+    title: "Project Management",
     description:
-      "Transforming existing spaces into refined, functional and beautifully designed environments.",
+      "Managing consultants, contractors, budgets, timelines and quality from concept to completion, ensuring every project is delivered smoothly and successfully.",
+  },
+  {
+    icon: PenTool,
+    title: "Design Consultation",
+    description:
+      "Practical design advice to help you make informed decisions, explore the right options and avoid costly mistakes at every stage of your project.",
   },
 ];
 

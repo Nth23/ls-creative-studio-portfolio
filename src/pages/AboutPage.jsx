@@ -23,14 +23,14 @@ function AboutPage() {
           <div className="ap-hero-content">
             <span className="ap-label">About</span>
             <h1 className="ap-hero-title">Shaakirah Lawal</h1>
-            <p className="ap-hero-subtitle">Architect & Structural Designer</p>
+            <p className="ap-hero-subtitle">Founder, LS Studios</p>
             <p className="ap-hero-location">Lagos, Nigeria</p>
           </div>
         </section>
 
         <section className="ap-stats">
           <div className="ap-stat">
-            <span className="ap-stat-number">8+</span>
+            <span className="ap-stat-number">7+</span>
             <span className="ap-stat-label">Years Experience</span>
           </div>
           <div className="ap-stat">
@@ -38,7 +38,7 @@ function AboutPage() {
             <span className="ap-stat-label">Projects Completed</span>
           </div>
           <div className="ap-stat">
-            <span className="ap-stat-number">4</span>
+            <span className="ap-stat-number">5</span>
             <span className="ap-stat-label">Service Areas</span>
           </div>
           <div className="ap-stat">
@@ -51,26 +51,51 @@ function AboutPage() {
           <div className="ap-story-left">
             <span className="ap-label">The Story</span>
             <h2 className="ap-section-title">
-              Rooted in precision, driven by vision
+              Design is more than creating beautiful spaces
             </h2>
           </div>
           <div className="ap-story-right">
             <p>
-              Shaakirah Lawal is a Lagos-based architect and structural designer
-              with over eight years of experience delivering residential,
-              commercial and hospitality projects across Nigeria. Her work spans
-              the full design lifecycle — from initial concept and technical
-              drawings through to construction supervision and interior
-              finishing.
+              Shaakirah Lawal is the founder of LS Studios, a design studio
+              passionate about creating elements, spaces, and buildings that go
+              beyond aesthetics. Her work sits at the intersection of culture,
+              innovation, and human experience, with a particular focus on
+              preserving African heritage through contemporary design.
             </p>
             <p>
-              Trained in architecture with a deep focus on structural integrity
-              and spatial planning, Shaakirah founded LS Creative Studio to
-              bring a more intentional and detail-driven approach to design in
-              Nigeria. Every project begins with a thorough understanding of the
-              client's brief, the site constraints, and the cultural context of
-              the space.
+              With over seven years of professional experience and master's
+              degrees in Architecture and Interior Design, she brings together
+              creativity, strategy, and craftsmanship in every project.
+              Shaakirah is a certified and registered architect with the
+              Architect's Registration Council of Nigeria and a Full Member of
+              the Nigerian Institute of Architects.
             </p>
+          </div>
+        </section>
+
+        <section className="ap-credentials">
+          <span className="ap-label">Credentials</span>
+          <div className="ap-credentials-grid">
+            <div className="ap-credential-item">
+              <span className="ap-credential-title">M.Sc Architecture</span>
+              <span className="ap-credential-desc">Master's Degree</span>
+            </div>
+            <div className="ap-credential-item">
+              <span className="ap-credential-title">M.Sc Interior Design</span>
+              <span className="ap-credential-desc">Master's Degree</span>
+            </div>
+            <div className="ap-credential-item">
+              <span className="ap-credential-title">ARCON Registered</span>
+              <span className="ap-credential-desc">
+                Architect's Registration Council of Nigeria
+              </span>
+            </div>
+            <div className="ap-credential-item">
+              <span className="ap-credential-title">NIA Full Member</span>
+              <span className="ap-credential-desc">
+                Nigerian Institute of Architects
+              </span>
+            </div>
           </div>
         </section>
 
@@ -78,18 +103,20 @@ function AboutPage() {
           <div className="ap-philosophy-inner">
             <span className="ap-label">Design Philosophy</span>
             <blockquote className="ap-quote">
-              "Good architecture is not just about how a building looks — it is
-              about how it works, how it feels, and how it serves the people
-              inside it."
+              "For Shaakirah Lawal, design is about more than creating beautiful
+              spaces. It's about shaping experiences, preserving stories and
+              creating places that stay with people."
             </blockquote>
             <p className="ap-philosophy-text">
-              At LS Creative Studio, design is approached as a conversation
-              between structure and beauty. Whether it is a luxury duplex, a
-              high-rise residential block or a fine dining restaurant, the
-              studio brings the same level of precision and creative rigour to
-              every project. Technical drawings are treated as art. Floor plans
-              are considered as carefully as facades. Every detail, from ceiling
-              heights to material finishes, is intentional.
+              At LS Studios, we believe every space has the power to shape
+              emotion, influence behavior and leave a lasting impression.
+              Whether we're designing a private residence, hospitality
+              destination, workplace or commercial environment, our goal is to
+              create interiors that feel authentic, enduring and deeply
+              connected to the people who use them. From concept development and
+              construction documentation to high-quality visualisations, we
+              combine creative thinking with practical execution to bring every
+              project to life.
             </p>
           </div>
         </section>
@@ -99,13 +126,13 @@ function AboutPage() {
           <div className="ap-skills-grid">
             {[
               "Architectural Design",
-              "Structural Engineering",
-              "Floor Plan & Blueprint",
               "Interior Design",
+              "Interior Fit-outs",
+              "Project Management",
+              "Design Consultation",
               "3D Visualisation",
-              "Construction Supervision",
-              "Space Planning",
-              "Renovation & Restoration",
+              "Construction Documentation",
+              "Cultural Heritage Design",
             ].map((skill) => (
               <div className="ap-skill-item" key={skill}>
                 <span>{skill}</span>
