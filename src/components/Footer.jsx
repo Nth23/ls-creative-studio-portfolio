@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 import "./Footer.css";
 
@@ -15,10 +16,10 @@ function Footer() {
         </div>
 
         <div className="footer-links">
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
-          <a href="#contact">Contact</a>
+          <Link to="/#about">About</Link>
+          <Link to="/#projects">Projects</Link>
+          <Link to="/#services">Services</Link>
+          <Link to="/#contact">Contact</Link>
         </div>
 
         <div className="footer-socials">

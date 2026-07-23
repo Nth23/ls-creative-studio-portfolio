@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import "./Navbar.css";
@@ -37,16 +38,16 @@ function Navbar() {
       {/* Desktop links */}
       <ul className="navbar-links">
         <li>
-          <a href="#about">About</a>
+          <Link to="/#about">About</Link>
         </li>
         <li>
-          <a href="#services">Services</a>
+          <Link to="/#services">Services</Link>
         </li>
         <li>
-          <a href="#projects">Projects</a>
+          <Link to="/#projects">Projects</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/#contact">Contact</Link>
         </li>
       </ul>
 
@@ -74,24 +75,24 @@ function Navbar() {
           >
             <ul className="navbar-mobile-links">
               <li>
-                <a href="#about" onClick={closeMenu}>
+                <Link to="/#about" onClick={closeMenu}>
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#services" onClick={closeMenu}>
+                <Link to="/#services" onClick={closeMenu}>
                   Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#projects" onClick={closeMenu}>
+                <Link to="/#projects" onClick={closeMenu}>
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" onClick={closeMenu}>
+                <Link to="/#contact" onClick={closeMenu}>
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </motion.div>

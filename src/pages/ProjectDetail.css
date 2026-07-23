@@ -220,7 +220,7 @@
   overflow: hidden;
   cursor: pointer;
   opacity: 0.5;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s ease;
 }
 
 .pd-reel-item:hover {
@@ -260,7 +260,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   opacity: 0.4;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s ease;
 }
 
 .pd-back-link:hover {

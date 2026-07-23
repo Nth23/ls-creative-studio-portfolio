@@ -166,7 +166,7 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   opacity: 0.7;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
   cursor: default;
 }
 
@@ -199,7 +199,7 @@
   font-size: 0.8rem;
   letter-spacing: 0.25em;
   text-transform: uppercase;
-  transition: gap 0.3s;
+  transition: gap 0.3s ease;
 }
 
 .ap-cta-btn:hover {
@@ -211,7 +211,7 @@
   width: 40px;
   height: 1px;
   background: #f5f5f0;
-  transition: width 0.3s;
+  transition: width 0.3s ease;
 }
 
 .ap-cta-btn:hover .ap-cta-line {
@@ -230,7 +230,7 @@
   letter-spacing: 0.2em;
   text-transform: uppercase;
   opacity: 0.4;
-  transition: opacity 0.2s;
+  transition: opacity 0.2s ease;
 }
 
 .ap-back-link:hover {
@@ -317,6 +317,7 @@
   gap: 0.6rem;
   padding: 2rem;
   border: 1px solid rgba(245, 245, 240, 0.1);
+  transition: all 0.3s ease;
 }
 
 .ap-credential-title {
@@ -332,12 +333,29 @@
   line-height: 1.5;
 }
 
+.ap-credential-item:hover {
+  border-color: rgba(245, 245, 240, 0.3);
+  background: rgba(245, 245, 240, 0.03);
+  box-shadow: 0 0 40px rgba(245, 245, 240, 0.06);
+  transform: translateY(-4px);
+}
+
+.ap-skill-item:hover {
+  border-color: rgba(245, 245, 240, 0.3);
+  background: rgba(245, 245, 240, 0.03);
+  box-shadow: 0 0 40px rgba(245, 245, 240, 0.06);
+  transform: translateY(-4px);
+}
+
 @media (max-width: 768px) {
+  .ap-stats {
+    padding: 1.5rem;
+  }
   .ap-credentials {
     padding: 4rem 1.5rem;
   }
 
   .ap-credentials-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
