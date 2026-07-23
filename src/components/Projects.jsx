@@ -3,7 +3,14 @@ import "./Projects.css";
 import projects from "../data/projects";
 import { Link } from "react-router-dom";
 
-const categories = ["All", "Residential", "Hospitality", "Interior Design"];
+const categories = [
+  "All",
+  "Residential",
+  "Commercial",
+  "Hospitality",
+  "Corporate",
+  "Institutional",
+];
 
 function Projects() {
   const [active, setActive] = useState("All");

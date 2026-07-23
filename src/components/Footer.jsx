@@ -32,7 +32,7 @@ function Footer() {
             <Instagram size={18} strokeWidth={1.5} />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/shaakirahlawal"
             target="_blank"
             rel="noreferrer"
             className="footer-social-link"
