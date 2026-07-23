@@ -8,6 +8,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
+import Process from "./components/Process";
 import AboutPage from "./pages/AboutPage";
 import ProjectDetail from "./pages/ProjectDetail";
 import { AnimatePresence } from "framer-motion";
@@ -38,6 +39,7 @@ function App() {
                 <Hero />
                 <About />
                 <Services />
+                <Process />
                 <Testimonials />
                 <Projects />
                 <Contact />
