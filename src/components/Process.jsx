@@ -60,6 +60,13 @@ function Process() {
 
   return (
     <section className="process">
+      <FadeUp>
+        <div className="process-header">
+          <span className="process-label">Our Process</span>
+          <h2 className="process-title">How We Work</h2>
+        </div>
+      </FadeUp>
+
       <div className="process-bg-number">
         <motion.span
           key={activeStep}
