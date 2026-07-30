@@ -9,10 +9,13 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Testimonials from "./components/Testimonials";
 import Process from "./components/Process";
+import Clients from "./components/Clients";
+import Products from "./components/Products";
+
 import AboutPage from "./pages/AboutPage";
 import ProjectDetail from "./pages/ProjectDetail";
 import Consultation from "./pages/Consultation";
-import Clients from "./components/Clients";
+
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -45,6 +48,7 @@ function App() {
                 <Testimonials />
                 <Clients />
                 <Projects />
+                <Products />
                 <Contact />
                 <Footer />
               </>
