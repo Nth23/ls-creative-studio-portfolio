@@ -1,8 +1,8 @@
 import "./Process.css";
 import FadeUp from "./FadeUp";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
+import { useState, useRef, useEffect } from "react";
 
 const steps = [
   {
@@ -57,9 +57,40 @@ const steps = [
 
 function Process() {
   const [activeStep, setActiveStep] = useState(0);
+  const [showBgNumber, setShowBgNumber] = useState(false);
+  const sectionRef = useRef(null);
+
+  const stepRefs = useRef([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!sectionRef.current) return;
+      const rect = sectionRef.current.getBoundingClientRect();
+      setShowBgNumber(
+        rect.top < window.innerHeight * 0.1 &&
+          rect.bottom > window.innerHeight * 0.9,
+      );
+
+      let closestIndex = 0;
+      let closestDistance = Infinity;
+      stepRefs.current.forEach((el, index) => {
+        if (!el) return;
+        const stepRect = el.getBoundingClientRect();
+        const distance = Math.abs(stepRect.top - window.innerHeight * 0.4);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+      setActiveStep(closestIndex);
+    };
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <section className="process">
+    <section className="process" ref={sectionRef}>
       <FadeUp>
         <div className="process-header">
           <span className="process-label">Our Process</span>
@@ -67,16 +98,18 @@ function Process() {
         </div>
       </FadeUp>
 
-      <div className="process-bg-number">
-        <motion.span
-          key={activeStep}
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          {steps[activeStep].number}
-        </motion.span>
-      </div>
+      {showBgNumber && (
+        <div className="process-bg-number">
+          <motion.span
+            key={activeStep}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            {steps[activeStep].number}
+          </motion.span>
+        </div>
+      )}
 
       <div className="process-list">
         {steps.map((step, index) => (
@@ -84,6 +117,7 @@ function Process() {
             <div
               className="process-step"
               onMouseEnter={() => setActiveStep(index)}
+              ref={(el) => (stepRefs.current[index] = el)}
             >
               <span className="process-number">{step.number}</span>
               <div className="process-step-content">

@@ -11,6 +11,7 @@ import Testimonials from "./components/Testimonials";
 import Process from "./components/Process";
 import AboutPage from "./pages/AboutPage";
 import ProjectDetail from "./pages/ProjectDetail";
+import Consultation from "./pages/Consultation";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -49,6 +50,7 @@ function App() {
           />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/consultation" element={<Consultation />} />
         </Routes>
       </AnimatePresence>
     </div>

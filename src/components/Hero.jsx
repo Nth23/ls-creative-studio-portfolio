@@ -1,5 +1,6 @@
 import "./Hero.css";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -23,6 +24,16 @@ function Hero() {
         >
           Design That Connects With You
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: [0.25, 0.1, 0.25, 1], delay: 1 }}
+        >
+          <Link to="/consultation" className="hero-cta">
+            Book a Consultation
+          </Link>
+        </motion.div>
       </div>
       <div className="hero-scroll-indicator">
         <span>Scroll</span>

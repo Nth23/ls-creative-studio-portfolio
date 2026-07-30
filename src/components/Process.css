@@ -7,10 +7,9 @@
 }
 
 .process-bg-number {
-  position: absolute;
-  top: 50%;
+  position: fixed;
+  top: 10vh;
   right: 4rem;
-  transform: translateY(-50%);
   font-size: 28rem;
   font-weight: 700;
   line-height: 1;
@@ -19,17 +18,19 @@
   z-index: 0;
 }
 
-.process-header,
-.process-list {
+.process-header {
   position: relative;
   z-index: 1;
-}
-
-.process-header {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: 5rem;
+}
+
+.process-list {
+  position: relative;
+  z-index: 1;
+  clear: both;
 }
 
 .process-label {

@@ -1,0 +1,148 @@
+.consultation-page {
+  background: #0f0f0f;
+  color: #f5f5f0;
+  min-height: 100vh;
+  padding: 8rem 3rem 4rem;
+}
+
+.consultation-header {
+  max-width: 700px;
+  margin: 0 auto 4rem;
+  text-align: center;
+}
+
+.consultation-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+.consultation-title {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 300;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+}
+
+.consultation-subtitle {
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0.6;
+}
+
+.consultation-form {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.consultation-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.c-form-input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(245, 245, 240, 0.3);
+  padding: 0.8rem 0;
+  font-size: 0.95rem;
+  color: #f5f5f0;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.c-form-input:focus {
+  border-bottom-color: #f5f5f0;
+}
+
+select.c-form-input {
+  cursor: pointer;
+}
+
+select.c-form-input option {
+  background: #0f0f0f;
+}
+
+.consultation-submit {
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  background: none;
+  border: none;
+  color: #f5f5f0;
+  font-size: 0.85rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 1rem 0;
+  margin-top: 1.5rem;
+  transition: gap 0.3s;
+}
+
+.consultation-submit:hover {
+  gap: 1.8rem;
+}
+
+.consultation-submit-line {
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: #f5f5f0;
+  transition: width 0.3s;
+}
+
+.consultation-submit:hover .consultation-submit-line {
+  width: 70px;
+}
+
+.consultation-back {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.consultation-back-link {
+  color: #f5f5f0;
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+.consultation-back-link:hover {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .consultation-page {
+    padding: 6rem 1.5rem 3rem;
+  }
+
+  .consultation-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
