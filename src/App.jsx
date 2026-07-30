@@ -12,6 +12,7 @@ import Process from "./components/Process";
 import AboutPage from "./pages/AboutPage";
 import ProjectDetail from "./pages/ProjectDetail";
 import Consultation from "./pages/Consultation";
+import Clients from "./components/Clients";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
                 <Services />
                 <Process />
                 <Testimonials />
+                <Clients />
                 <Projects />
                 <Contact />
                 <Footer />

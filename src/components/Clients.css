@@ -1,0 +1,85 @@
+.clients {
+  padding: 3rem 0;
+  background-color: #0f0f0f;
+  color: #fff;
+  /* border-top: 1px solid rgba(245, 245, 240, 0.1);
+  border-bottom: 1px solid rgba(245, 245, 240, 0.1); */
+  overflow: hidden;
+}
+
+.clients-header {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 3rem;
+}
+
+.clients-label {
+  font-size: 1rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.clients-marquee {
+  width: 100%;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+.clients-track {
+  display: flex;
+  gap: 5rem;
+  width: max-content;
+  animation: scrollClients 25s linear infinite;
+}
+
+.client-name {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  opacity: 0.3;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+}
+
+.client-name:hover {
+  opacity: 0.8;
+}
+
+@keyframes scrollClients {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+@media (max-width: 768px) {
+  .clients {
+    padding: 4rem 0;
+  }
+
+  .clients-header {
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .clients-track {
+    gap: 3rem;
+  }
+}
