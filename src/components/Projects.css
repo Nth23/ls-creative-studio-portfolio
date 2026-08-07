@@ -160,20 +160,24 @@
 
   .project-item {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 
   .project-item--reverse {
     direction: ltr;
   }
 
-  .projects-filter {
-    gap: 0.6rem;
+  .project-image-wrap {
+    aspect-ratio: 4/3;
+    width: 100%;
   }
 
-  .filter-btn {
-    padding: 0.4rem 1rem;
-    font-size: 0.7rem;
+  .project-info {
+    gap: 1rem;
+  }
+
+  .project-name {
+    margin-top: 0;
   }
 }
 
