@@ -21,7 +21,7 @@ function Products() {
     <section className="products" id="products">
       <FadeUp>
         <div className="products-header">
-          <span className="products-label">Object Design</span>
+          <span className="products-label">Product Design</span>
           <h2 className="products-title">Products</h2>
           <div className="products-filter">
             {collections.map((col) => (
