@@ -19,6 +19,7 @@ function Footer() {
           <Link to="/#about">About</Link>
           <Link to="/#projects">Projects</Link>
           <Link to="/#services">Services</Link>
+          <Link to="/#products">Products</Link>
           <Link to="/#contact">Contact</Link>
         </div>
 

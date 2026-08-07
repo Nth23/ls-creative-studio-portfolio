@@ -47,6 +47,9 @@ function Navbar() {
           <Link to="/#projects">Projects</Link>
         </li>
         <li>
+          <Link to="/#products">Products</Link>
+        </li>
+        <li>
           <Link to="/#contact">Contact</Link>
         </li>
       </ul>
@@ -87,6 +90,11 @@ function Navbar() {
               <li>
                 <Link to="/#projects" onClick={closeMenu}>
                   Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/#products" onClick={closeMenu}>
+                  Products
                 </Link>
               </li>
               <li>
