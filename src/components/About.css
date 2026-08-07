@@ -93,6 +93,10 @@
   .about-content {
     padding: 4rem 1.5rem;
   }
+
+  .about-title {
+    font-weight: 600;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -118,9 +122,5 @@
 
   .about-content {
     padding: 5rem 3rem;
-  }
-  .about-title {
-    font-size: clamp(1.5rem, 3vw, 2.5rem);
-    font-weight: 600;
   }
 }
