@@ -82,4 +82,8 @@
   .clients-track {
     gap: 3rem;
   }
+
+  .client-name {
+    font-weight: 400;
+  }
 }
