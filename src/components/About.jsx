@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import "./About.css";
 import FadeUp from "./FadeUp";
 import portrait from "../assets/images/headshot1.jpg";
+import portrait2 from "../assets/images/headshot2.jpg";
 
 function About() {
   return (
@@ -9,7 +10,7 @@ function About() {
       <FadeUp>
         <div className="about-image-wrap">
           <img
-            src={portrait}
+            src={portrait2}
             alt="Architect portrait"
             className="about-image"
           />
