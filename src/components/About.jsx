@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./About.css";
 import FadeUp from "./FadeUp";
 import portrait from "../assets/images/headshot1.jpg";
-import portrait2 from "../assets/images/headshot2.jpg";
+import portrait2 from "../assets/images/headshot4.png";
 
 function About() {
   return (

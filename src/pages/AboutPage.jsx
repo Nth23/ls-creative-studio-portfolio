@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./AboutPage.css";
-import portrait from "../assets/images/headshot3.jpg";
+import portrait from "../assets/images/headshot5.png";
 import { motion } from "framer-motion";
 
 function AboutPage() {
