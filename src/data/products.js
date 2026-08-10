@@ -19,11 +19,11 @@ const products = [
   },
   {
     id: 2,
-    name: "Kukuruku Shawl",
+    name: "Kukuruku Scarf",
     collection: "Kukuruku",
     category: "Textile",
     description:
-      "A handcrafted shawl carrying the same heritage motifs as the Kukuruku collection, blending fashion with cultural storytelling.",
+      "A handcrafted scarf carrying the same heritage motifs as the Kukuruku collection, blending fashion with cultural storytelling.",
     image: kukurukuShawls,
   },
   {
@@ -37,16 +37,16 @@ const products = [
   },
   {
     id: 4,
-    name: "Kukuruku Stool",
+    name: "Kukuruku Puff",
     collection: "Kukuruku",
     category: "Furniture",
     description:
-      "A versatile stool balancing form and function, designed to complement the Kukuruku furniture collection.",
+      "A versatile cushioned stool balancing form and function, designed to complement the Kukuruku furniture collection.",
     image: kukurukuChair,
   },
   {
     id: 5,
-    name: "Kukuruku Puffs",
+    name: "Kukuruku Pillow Puffs",
     collection: "Kukuruku",
     category: "Furniture",
     description:
