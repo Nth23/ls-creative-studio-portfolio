@@ -14,7 +14,7 @@ const products = [
     collection: "Kukuruku",
     category: "Textile",
     description:
-      "A richly patterned upholstery fabric inspired by African textile traditions, reimagined for contemporary furniture and interiors.",
+      "A richly patterned upholstery fabric inspired by African textile traditions and reimagined for contemporary furniture and interiors.",
     image: kukurukuWallpaper,
   },
   {
@@ -23,7 +23,7 @@ const products = [
     collection: "Kukuruku",
     category: "Textile",
     description:
-      "A handcrafted scarf carrying the same heritage motifs as the Kukuruku collection, blending fashion with cultural storytelling.",
+      "A handcrafted scarf featuring the heritage motifs of the Kukuruku collection, bringing cultural storytelling into everyday style.",
     image: kukurukuShawls,
   },
   {
@@ -32,7 +32,7 @@ const products = [
     collection: "Kukuruku",
     category: "Accessory",
     description:
-      "A statement tote bag crafted from the Kukuruku fabric, merging functionality with distinctive cultural design.",
+      "A statement tote made from Kukuruku fabric, combining everyday function with distinctive cultural design.",
     image: kukurukuTote,
   },
   {
@@ -41,16 +41,16 @@ const products = [
     collection: "Kukuruku",
     category: "Furniture",
     description:
-      "A versatile cushioned stool balancing form and function, designed to complement the Kukuruku furniture collection.",
+      "A versatile cushioned stool that balances form and function, designed to complement the Kukuruku furniture collection.",
     image: kukurukuChair,
   },
   {
     id: 5,
-    name: "Kukuruku Pillow Puffs",
+    name: "Kukuruku Pillows",
     collection: "Kukuruku",
     category: "Furniture",
     description:
-      "Soft, sculptural puffs designed for flexible seating and relaxed, intentional living spaces.",
+      "Soft decorative pillows featuring the Kukuruku pattern, designed to add character and cultural expression to relaxed living spaces.",
     image: kukurukuPuffs,
   },
   {
@@ -59,7 +59,7 @@ const products = [
     collection: "Udomosi",
     category: "Furniture",
     description:
-      "A sculptural centre table designed to anchor a living space with clean lines and considered proportions.",
+      "A sculptural centre table with clean lines and considered proportions, designed to anchor a living space.",
     image: udomosiTable,
   },
   {
@@ -68,7 +68,7 @@ const products = [
     collection: "Udomosi",
     category: "Furniture",
     description:
-      "A versatile stool balancing form and function, designed to complement the Udomosi furniture collection.",
+      "A versatile stool that balances form and function, designed to complement the Udomosi furniture collection.",
     image: udomosiStool,
   },
   {
@@ -77,7 +77,7 @@ const products = [
     collection: "Tsagwe",
     category: "Decor",
     description:
-      "Handcrafted clay accessories celebrating traditional craftsmanship reimagined for the modern home.",
+      "Handcrafted clay accessories that celebrate traditional craftsmanship in forms made for the modern home.",
     image: tsagweCeramics,
   },
 ];
