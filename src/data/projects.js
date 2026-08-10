@@ -17,7 +17,7 @@ import dining1 from "../assets/images/projects/2bedroom/2bed-dinning1.jpg";
 const projects = [
   {
     id: 1,
-    title: "2 Bedroom Interior Design",
+    title: "Project LTO",
     location: "Lagos, Nigeria",
     year: "2024",
     category: "Residential",

@@ -12,7 +12,7 @@ function Footer() {
             alt="LS Creative Studio"
             className="footer-logo"
           />
-          <p className="footer-tagline">Architecture & Structural Design</p>
+          <p className="footer-tagline">Architecture & Interior Design</p>
         </div>
 
         <div className="footer-links">
