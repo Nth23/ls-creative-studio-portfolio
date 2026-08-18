@@ -48,7 +48,6 @@ const projects = [
       room4,
       bathroom,
       dining,
-      kitchen,
       lobby,
     ],
   },
