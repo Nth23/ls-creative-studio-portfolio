@@ -10,7 +10,7 @@ import room2 from "../assets/images/projects/project-lto/bdv2.jpg";
 import room3 from "../assets/images/projects/project-lto/bdv3.jpg";
 import room4 from "../assets/images/projects/project-lto/wardrobe.jpg";
 import bathroom from "../assets/images/projects/project-lto/bathroom.jpg";
-import kitchen from "../assets/images/projects/project-lto/kitchen.jpg";
+// import kitchen from "../assets/images/projects/project-lto/kitchen.jpg";
 import lobby from "../assets/images/projects/project-lto/lobby.jpg";
 import dining from "../assets/images/projects/project-lto/dining.jpg";
 
