@@ -110,6 +110,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200",
     floorPlan: null,
+    comingSoon: true,
   },
   {
     id: 7,
@@ -122,6 +123,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200",
     floorPlan: null,
+    comingSoon: true,
   },
   {
     id: 8,
@@ -134,6 +136,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200",
     floorPlan: null,
+    comingSoon: true,
   },
   {
     id: 9,
@@ -145,6 +148,7 @@ const projects = [
       "A warm, inviting cafe space designed for comfort, community and a memorable customer experience.",
     image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200",
     floorPlan: null,
+    comingSoon: true,
   },
   {
     id: 10,
@@ -157,6 +161,7 @@ const projects = [
     image:
       "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1200",
     floorPlan: null,
+    comingSoon: true,
   },
   {
     id: 11,
@@ -168,6 +173,7 @@ const projects = [
       "Student hostel design for a private university, accommodating 200 students per block across 8 blocks with recreational and outdoor spaces.",
     image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?w=1200",
     floorPlan: null,
+    comingSoon: true,
   },
 ];
 

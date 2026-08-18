@@ -46,8 +46,11 @@ function Projects() {
               <img
                 src={project.image}
                 alt={project.title}
-                className="project-image"
+                className={`project-image ${project.comingSoon ? "project-image--dimmed" : ""}`}
               />
+              {project.comingSoon && (
+                <div className="project-coming-soon-badge">Coming Soon</div>
+              )}
             </div>
             <div className="project-info">
               <span className="project-number">0{project.id}</span>
@@ -58,9 +61,15 @@ function Projects() {
                 <span>{project.year}</span>
                 <span>{project.category}</span>
               </div>
-              <Link to={`/projects/${project.id}`} className="project-btn">
-                View Project
-              </Link>
+              {project.comingSoon ? (
+                <span className="project-btn project-btn--disabled">
+                  Coming Soon
+                </span>
+              ) : (
+                <Link to={`/projects/${project.id}`} className="project-btn">
+                  View Project
+                </Link>
+              )}
             </div>
           </div>
         ))}
