@@ -90,6 +90,33 @@
   max-width: 600px;
 }
 
+.project-image-wrap {
+  position: relative;
+}
+
+.project-image--dimmed {
+  filter: grayscale(1) brightness(0.5);
+}
+
+.project-coming-soon-badge {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background: rgba(15, 15, 15, 0.85);
+  color: #f5f5f0;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  backdrop-filter: blur(4px);
+}
+
+.project-btn--disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   .process {
     padding: 5rem 1.5rem;
