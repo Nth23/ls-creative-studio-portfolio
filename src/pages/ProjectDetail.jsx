@@ -182,7 +182,7 @@ function ProjectDetail() {
 
         {/* Back */}
         <div className="pd-back">
-          <Link to="/" className="pd-back-link">
+          <Link to="/#projects" className="pd-back-link">
             ← Back to Projects
           </Link>
         </div>

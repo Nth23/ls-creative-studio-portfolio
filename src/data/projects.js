@@ -1,18 +1,26 @@
-import living1 from "../assets/images/projects/project-lto/lv1.jpg";
-import living2 from "../assets/images/projects/project-lto/lv2.jpg";
-import living3 from "../assets/images/projects/project-lto/lv3.jpg";
-import living4 from "../assets/images/projects/project-lto/lv4.jpg";
-import living5 from "../assets/images/projects/project-lto/lv5.jpg";
-import living6 from "../assets/images/projects/project-lto/lv6.jpg";
-import living7 from "../assets/images/projects/project-lto/lv7.jpg";
-import room1 from "../assets/images/projects/project-lto/bdv1.jpg";
-import room2 from "../assets/images/projects/project-lto/bdv2.jpg";
-import room3 from "../assets/images/projects/project-lto/bdv3.jpg";
-import room4 from "../assets/images/projects/project-lto/wardrobe.jpg";
-import bathroom from "../assets/images/projects/project-lto/bathroom.jpg";
-// import kitchen from "../assets/images/projects/project-lto/kitchen.jpg";
-import lobby from "../assets/images/projects/project-lto/lobby.jpg";
-import dining from "../assets/images/projects/project-lto/dining.jpg";
+const ltoImages = import.meta.glob(
+  "../assets/images/projects/project-lto/*.{jpg,jpeg,png,webp}",
+  { eager: true, import: "default" },
+);
+const ltoGallery = Object.values(ltoImages);
+
+const admiraltyImages = import.meta.glob(
+  "../assets/images/projects/admiralty/*.{jpg,jpeg,png,webp}",
+  { eager: true, import: "default" },
+);
+const admiraltyGallery = Object.values(admiraltyImages);
+
+const havaLoungeImages = import.meta.glob(
+  "../assets/images/projects/hava-lounge/*.{jpg,jpeg,png,webp}",
+  { eager: true, import: "default" },
+);
+const havaLoungeGallery = Object.values(havaLoungeImages);
+
+const rococoImages = import.meta.glob(
+  "../assets/images/projects/rococo/*.{jpg,jpeg,png,webp}",
+  { eager: true, import: "default" },
+);
+const rococoGallery = Object.values(rococoImages);
 
 const projects = [
   {
@@ -23,7 +31,7 @@ const projects = [
     category: "Residential",
     description:
       "Interior design for a bachelor who works in a tech company and spends more time working at home. Spaces include sitting room, bedroom, home office, laundry and kitchen.",
-    image: living1,
+    image: ltoGallery[0],
     floorPlan: null,
     features: [
       "Dining Space",
@@ -34,22 +42,7 @@ const projects = [
       "Rafia Wardrobe",
       "Kitchen Area",
     ],
-    gallery: [
-      living1,
-      living2,
-      living3,
-      living4,
-      living5,
-      living6,
-      living7,
-      room1,
-      room2,
-      room3,
-      room4,
-      bathroom,
-      dining,
-      lobby,
-    ],
+    gallery: ltoGallery,
   },
   {
     id: 2,
@@ -59,9 +52,9 @@ const projects = [
     category: "Hospitality",
     description:
       "A waterfront hospitality destination designed to feel authentic, enduring and intuitively connected to its guests.",
-    image:
-      "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=1200",
+    image: admiraltyGallery[0],
     floorPlan: null,
+    gallery: admiraltyGallery,
   },
   {
     id: 3,
@@ -71,9 +64,9 @@ const projects = [
     category: "Hospitality",
     description:
       "A refined hospitality destination designed to feel authentic, enduring and intuitively connected to its guests.",
-    image:
-      "https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?w=1200",
+    image: havaLoungeGallery[0],
     floorPlan: null,
+    gallery: havaLoungeGallery,
   },
   {
     id: 4,
@@ -83,8 +76,9 @@ const projects = [
     category: "Hospitality",
     description:
       "Fine dining restaurant and bar with rich baroque and rococo style, featuring a stained glass skylight and ornate interiors.",
-    image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1200",
+    image: rococoGallery[0],
     floorPlan: null,
+    gallery: rococoGallery,
   },
   {
     id: 5,
