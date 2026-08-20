@@ -22,6 +22,12 @@ const rococoImages = import.meta.glob(
 );
 const rococoGallery = Object.values(rococoImages);
 
+const livImages = import.meta.glob(
+  "../assets/images/projects/liv/*.{jpg,jpeg,png,webp}",
+  { eager: true, import: "default" },
+);
+const livGallery = Object.values(livImages);
+
 const projects = [
   {
     id: 1,
@@ -88,9 +94,9 @@ const projects = [
     category: "Hospitality",
     description:
       "Full restoration and renovation of an existing nightclub into a luxury fine dining restaurant on Ligali Ayorinde.",
-    image:
-      "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200",
+    image: livGallery[4],
     floorPlan: null,
+    gallery: livGallery,
   },
   {
     id: 6,
