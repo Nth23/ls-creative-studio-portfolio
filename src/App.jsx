@@ -45,9 +45,9 @@ function App() {
                 <About />
                 <Services />
                 <Process />
+                <Projects />
                 <Testimonials />
                 <Clients />
-                <Projects />
                 <Products />
                 <Contact />
                 <Footer />

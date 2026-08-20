@@ -43,11 +43,17 @@ function Projects() {
             key={project.id}
           >
             <div className="project-image-wrap">
-              <img
-                src={project.image}
-                alt={project.title}
-                className={`project-image ${project.comingSoon ? "project-image--dimmed" : ""}`}
-              />
+              {project.comingSoon ? (
+                <div className="project-placeholder">
+                  <span className="project-placeholder-text">LS Studios</span>
+                </div>
+              ) : (
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                />
+              )}
               {project.comingSoon && (
                 <div className="project-coming-soon-badge">Coming Soon</div>
               )}
