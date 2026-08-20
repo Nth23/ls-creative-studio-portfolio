@@ -1,32 +1,38 @@
 const ltoImages = import.meta.glob(
-  "../assets/images/projects/project-lto/*.{jpg,jpeg,png,webp}",
+  "../assets/images/projects/project-lto/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp,WEBP}",
   { eager: true, import: "default" },
 );
-const ltoGallery = Object.values(ltoImages);
+
+const galleryFromGlob = (images) =>
+  Object.entries(images)
+    .sort(([firstPath], [secondPath]) => firstPath.localeCompare(secondPath))
+    .map(([, image]) => image);
+
+const ltoGallery = galleryFromGlob(ltoImages);
 
 const admiraltyImages = import.meta.glob(
-  "../assets/images/projects/admiralty/*.{jpg,jpeg,png,webp}",
+  "../assets/images/projects/admiralty/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp,WEBP}",
   { eager: true, import: "default" },
 );
-const admiraltyGallery = Object.values(admiraltyImages);
+const admiraltyGallery = galleryFromGlob(admiraltyImages);
 
 const havaLoungeImages = import.meta.glob(
-  "../assets/images/projects/hava-lounge/*.{jpg,jpeg,png,webp}",
+  "../assets/images/projects/hava-lounge/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp,WEBP}",
   { eager: true, import: "default" },
 );
-const havaLoungeGallery = Object.values(havaLoungeImages);
+const havaLoungeGallery = galleryFromGlob(havaLoungeImages);
 
 const rococoImages = import.meta.glob(
-  "../assets/images/projects/rococo/*.{jpg,jpeg,png,webp}",
+  "../assets/images/projects/rococo/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp,WEBP}",
   { eager: true, import: "default" },
 );
-const rococoGallery = Object.values(rococoImages);
+const rococoGallery = galleryFromGlob(rococoImages);
 
 const livImages = import.meta.glob(
-  "../assets/images/projects/liv/*.{jpg,jpeg,png,webp}",
+  "../assets/images/projects/liv/*.{jpg,JPG,jpeg,JPEG,png,PNG,webp,WEBP}",
   { eager: true, import: "default" },
 );
-const livGallery = Object.values(livImages);
+const livGallery = galleryFromGlob(livImages);
 
 const projects = [
   {
