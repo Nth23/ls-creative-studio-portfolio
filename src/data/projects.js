@@ -75,7 +75,7 @@ const projects = [
     year: "2023",
     category: "Hospitality",
     description:
-      "A refined hospitality destination designed to feel authentic, enduring and intuitively connected to its guests.",
+      "A warm, contemporary lounge designed around intimate dining and relaxed social spaces. Rich timber accents, deep blue upholstery, layered lighting and greenery come together to create an inviting atmosphere with a distinct sense of character.",
     image: havaLoungeGallery[0],
     floorPlan: null,
     gallery: havaLoungeGallery,
@@ -87,7 +87,7 @@ const projects = [
     year: "2023",
     category: "Hospitality",
     description:
-      "Fine dining restaurant and bar with rich baroque and rococo style, featuring a stained glass skylight and ornate interiors.",
+      "A refined fine dining restaurant, bar and night club inspired by the rich Baroque and Rococo styles. The design combines ornate interiors, a stained glass skylight, atmospheric lighting and sound with integrated technology to create an immersive dining and entertainment experience.",
     image: rococoGallery[0],
     floorPlan: null,
     gallery: rococoGallery,
@@ -99,7 +99,7 @@ const projects = [
     year: "2023",
     category: "Hospitality",
     description:
-      "Full restoration and renovation of an existing nightclub into a luxury fine dining restaurant on Ligali Ayorinde.",
+      "A restoration and renovation project that transformed an existing nightclub into a luxury fine dining restaurant and bar on Ligali Ayorinde, Victoria Island. The design reimagines the existing space while introducing a refined atmosphere suited to its new purpose.",
     image: livGallery[4],
     floorPlan: null,
     gallery: livGallery,
