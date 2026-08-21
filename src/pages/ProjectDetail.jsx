@@ -161,7 +161,7 @@ function ProjectDetail() {
                   className={`pd-reel-item ${index === activeImage ? "pd-reel-item--active" : ""}`}
                   onClick={() => handleThumbClick(index)}
                 >
-                  <img src={img} alt={`thumb ${index + 1}`} />
+                  <img src={img} alt={`thumb ${index + 1}`} loading="lazy" />
                 </div>
               ))}
             </div>
