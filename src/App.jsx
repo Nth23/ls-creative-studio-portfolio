@@ -44,11 +44,11 @@ function App() {
                 <Hero />
                 <About />
                 <Services />
-                <Process />
                 <Projects />
+                <Products />
+                <Process />
                 <Testimonials />
                 <Clients />
-                <Products />
                 <Contact />
                 <Footer />
               </>

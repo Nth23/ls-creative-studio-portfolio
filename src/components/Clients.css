@@ -1,7 +1,7 @@
 .clients {
   padding: 2rem 0;
-  background-color: #0f0f0f;
-  color: #fff;
+  background-color: #fff;
+  color: #0f0f0f;
   border-top: 1px solid rgba(245, 245, 240, 0.1);
   border-bottom: 1px solid rgba(245, 245, 240, 0.1);
   overflow: hidden;
